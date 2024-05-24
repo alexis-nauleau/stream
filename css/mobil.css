@@ -1,0 +1,162 @@
+body{
+    background-color: red;
+    margin: 0 0 0 0;
+}
+
+header {
+    height: 55px;
+}
+
+#banniere {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.media {
+    display: flex;
+    grid-column: 2/3;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+#icone1 {
+    margin: 1% 0 0 10%;
+    width: 45px;
+    height: 45px;
+    border-radius: 43%;
+}
+
+#icone2, #icone3, #icone4 {
+    width: 45px;
+    height: 45px;
+    margin: 1% 1% 1%;
+    border-radius: 43%;
+}
+
+/******************profil************************************/
+#person {
+    padding-top: 20px;
+    padding-left: 65%;
+    grid-column: 3/4;
+}
+
+#middle {
+    position: relative;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 25% 1% 74%;
+    justify-content: center;
+    grid-template-rows: repeat(10, 100px);
+}
+.intro {
+    text-align: center;
+    background: #69C9D0;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+p {
+    margin: 4px 0 0;
+}
+
+/*************************filtre pour recherche*************/
+.legende {
+    background: white;
+    padding: 5px 10px;
+    margin-top: 18px;
+    height: 425px;
+    grid-column: 1/2;
+    grid-row: 2/6;
+}
+/********************affichage carte streameurs**********/
+.resultat {
+    background: grey;
+    padding: 5px 10px;
+    height: 425px;
+    grid-column: 1/2;
+    grid-row: 6/11;
+    margin-top: 66px;
+}
+
+/*********************contenu streameurs*******************/
+.contenu {
+    text-align: center;
+    background: #8d4745;
+    position: absolute;
+    top: 18px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    grid-column: 3/4;
+    grid-row: 2/6;
+}
+
+.card {
+    width: 21%;
+    background-color: #fff;
+    margin: 19px 15px 17px;
+    height: 140.5px;
+    border-radius: 10px;
+}
+
+nav {
+    z-index: 1;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    grid-template-columns: 32% 35% 33%;
+    grid-template-rows: repeat(3,33.33px);
+    grid-column: 3/4;
+    grid-row: 10/11;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    margin-left: 9%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-top: 16px;
+    height: 15px;
+    padding: 0 0 0 0;
+}
+
+.page-item {
+    margin-right: 0%; /* Espacement entre les éléments de la pagination */
+}
+
+.page-link {
+    text-decoration: none; /* Pour supprimer les soulignements des liens */
+    color: #fff;
+    padding: 0 20%;
+    margin: 0 15px 0 0;
+}
+.page-link:hover {
+    color: hsl(304, 80%, 39%); /* Couleur change lorsque la souris survole le lien */
+}
+
+/***********footer****************/
+.footer {
+    display: none;
+    background: #d3e3fd;
+    height: 50px;
+    text-align: center;
+    padding: 25px 0 0 0;
+    margin: 18px 0 0 0;
+}
+
+a {
+    text-decoration: none;
+    margin: 25px;
+}
+
+.team {
+    margin: 10px;
+}
